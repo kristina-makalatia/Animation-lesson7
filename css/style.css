@@ -1,0 +1,78 @@
+body, html{
+	width:100%;
+	height: 100%;
+}
+body{
+	padding: 2%;
+}
+/*base classes*/
+.p-relative{
+	position: relative;
+}
+.p-absolute{
+	position: absolute;
+}
+.main-box{
+	background-color: green;
+	border:2px solid red;
+	width:100%;
+	height: 100%;
+}
+
+/*Header*/
+.nav-li{
+	display: inline-block;
+	margin-right:30px;
+}
+.nav-li a{
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 48px;
+}
+.nav-li a:hover{
+	color:red;
+}
+.navigation{
+	top:37px;
+	left:37px;
+}
+.image{
+	top:15px;
+	right:37px;
+}
+.white-box{
+	left:-2px;
+	bottom: -2px;
+	background-color: #fff;
+	width: 618px;
+	height: 400px;
+}
+.green-box{
+	width: 300px;
+	height: 300px;
+	background-color: green;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+}
+.title{
+	top:50%;
+	left: 50%;
+	transform: translate(-50%, -50%) rotate(45deg);
+	font-size: 39px;
+	color: yellow;
+	text-transform: uppercase;
+	white-space: nowrap;
+
+}
+.read{
+	bottom: 0;
+	right: 15px;
+	text-transform: uppercase;
+	color: green;
+}
+.created-by{
+	bottom: 0;
+	right: 15px;
+	color: yellow;
+}
