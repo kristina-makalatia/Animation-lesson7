@@ -1,4 +1,4 @@
-body, html{
+ body, html{
 	width:100%;
 	height: 100%;
 }
@@ -11,6 +11,9 @@ body{
 }
 .p-absolute{
 	position: absolute;
+}
+.d-inline{
+	display: inline-block;
 }
 .main-box{
 	background-color: green;
@@ -31,6 +34,7 @@ body{
 }
 .nav-li a:hover{
 	color:red;
+	opacity: 0.5;
 }
 .navigation{
 	top:37px;
@@ -46,6 +50,18 @@ body{
 	background-color: #fff;
 	width: 618px;
 	height: 400px;
+	/*transition-property: color;
+	transition-duration: 5s;
+	transition-timing-function: linear;
+	transition-delay: 0.2s;*/
+	transition: all 0.3s linear 0.3s;
+
+}
+.white-box:hover{
+	background-color: pink;
+}
+.white-box:hover .green-box{
+	background-color: yellow;
 }
 .green-box{
 	width: 300px;
@@ -54,6 +70,8 @@ body{
 	top:50%;
 	left:50%;
 	transform: translate(-50%, -50%);
+	transition: all 0.3s linear 0.3s;
+	animation: myanimation 3s infinite;
 }
 .title{
 	top:50%;
@@ -63,16 +81,57 @@ body{
 	color: yellow;
 	text-transform: uppercase;
 	white-space: nowrap;
-
+	transition: all 0.3s linear 0.3s;
+}
+.title:hover{
+	color:red;
+	transform: translate(-50%, -50%) rotate(-45deg);
 }
 .read{
 	bottom: 0;
 	right: 15px;
 	text-transform: uppercase;
 	color: green;
+	transition: all 0.3s linear 0.3s;
 }
-.created-by{
+.read:hover {
+	color:red;
+	right:50px;
+}
+.created-by {
 	bottom: 0;
 	right: 15px;
 	color: yellow;
+}
+
+/*background-image*/
+.bg-image {
+	background-image: url("../img/image.jpg");
+	height: 500px;
+	width:600px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top left;
+}
+.test {
+	top:50px;
+	left:50px;
+	color:#fff;
+}
+
+
+.fb-icon{
+	height: 30px;
+
+}
+.social:hover .icon-logo:before{
+	color:blue;
+}
+.social-google{
+	font-size: 30px;
+}
+/*Keyframes*/
+@keyframes myanimation {
+  from {top: 0px; background-color:aqua; transform: translate(-50%, -50%) rotate(0deg);}
+  to {top: 200px; background-color: black; transform: translate(-50%, -50%) rotate(90deg);}
 }
